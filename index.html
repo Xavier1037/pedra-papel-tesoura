@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shizuru&display=swap" rel="stylesheet">
+    <title>Pedra-Papel-Tesoura</title>
+</head>
+<body>
+
+    <section class="container">
+        <div class="cards-container">
+            <div id="pedra" class="card -pedra" onclick="pedra()"><h2>PEDRA</h2></div>
+            <div id="papel" class="card -papel" onclick="papel()"><h2>PAPEL</h2></div>
+            <div id="tesoura" class="card -tesoura" onclick="tesoura()"><h2>TESOURA</h2></div>
+            <button id="reset" onclick="reset()"><h2>Reset</h2></button> 
+        </div>
+        <div class="vs"><h2>VS</h2></div>
+        <div class="cards-container-npc">
+            <div id="pedraNpc" class="card -pedra-Npc" onclick=""><h2>PEDRA</h2></div>
+            <div id="papelNpc" class="card -papel-Npc" onclick=""><h2>PAPEL</h2></div>
+            <div id="tesouraNpc" class="card -tesoura-Npc" onclick=""><h2>TESOURA</h2></div>    
+        </div>
+    </section>
+    
+
+    <script src="main.js"></script>
+</body>
+</html>
