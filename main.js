@@ -22,19 +22,19 @@ function pedra() {
             $papel.style.display= "none";
             $tesoura.style.display= "none";
             $papelNpc.style.display= "flex"; 
-            setTimeout(() => {reset();}, 1000);
+            setTimeout(() => {reset();}, 800);
            break;
        case 1:
             $papel.style.display= "none";
             $tesoura.style.display= "none";
             $tesouraNpc.style.display= "flex";
-            setTimeout(() => {win()}, 1000);
+           setTimeout(() => {win()}, 900);
            break;
        case 2:
             $papel.style.display= "none";
             $tesoura.style.display= "none";
             $pedraNpc.style.display= "flex";
-            setTimeout(() => {reset();}, 1000);
+            setTimeout(() => {reset();}, 800);
            break;
    }
 }
@@ -46,19 +46,19 @@ function papel() {
              $pedra.style.display= "none";
              $tesoura.style.display= "none";
              $papelNpc.style.display= "flex";
-             setTimeout(() => {reset();}, 1000);
+             setTimeout(() => {reset();}, 800);
             break;
         case 1:
              $pedra.style.display= "none";
              $tesoura.style.display= "none";
              $tesouraNpc.style.display= "flex";
-             setTimeout(() => {reset();}, 1000);
+             setTimeout(() => {reset();}, 800);
             break;
         case 2:
              $pedra.style.display= "none";
              $tesoura.style.display= "none";
              $pedraNpc.style.display= "flex";
-             setTimeout(() => {win()}, 1000);
+             setTimeout(() => {win()}, 900);
             break;
     }
  }
@@ -70,19 +70,19 @@ function papel() {
              $papel.style.display= "none";
              $pedra.style.display= "none";
              $papelNpc.style.display= "flex";
-             setTimeout(() => {win()}, 1000);
+             setTimeout(() => {win()}, 900);
             break;
         case 1:
              $papel.style.display= "none";
              $pedra.style.display= "none";
              $tesouraNpc.style.display= "flex";
-             setTimeout(() => {reset();}, 1000);
+             setTimeout(() => {reset();}, 800);
             break;
         case 2:
              $papel.style.display= "none";
              $pedra.style.display= "none";
              $pedraNpc.style.display= "flex";
-             setTimeout(() => {reset();}, 1000);
+             setTimeout(() => {reset();}, 800);
             break;
     }
  }
