@@ -1,3 +1,8 @@
+:root{
+    --color-container:rgb(30, 23, 41);
+    --color-cards-container: rgb(31, 20, 32);
+}
+
 *{
     margin:0;
     padding:0;
@@ -18,7 +23,7 @@ h2{
 .container{
     width: 100%;
     height: 100%;
-    background-color: rgb(30, 23, 41);
+    background-color: var(--color-container);
     display:flex;
     
     align-items: center;
@@ -28,7 +33,7 @@ h2{
 .cards-container{
     width: 100%;
     height: 400px;
-    background-color: rgb(31, 20, 32);
+    background-color:var(--color-cards-container);
     display: flex;
     flex-direction: column;
     justify-content:space-evenly;
@@ -85,13 +90,13 @@ h2{
     align-items: center;
     width: 200px;
     height: 400px;
-    background-color: rgb(31, 20, 32);
+    background-color:var(--color-container);
 }
 
 .cards-container-npc{
     width: 100%;
     height: 400px;
-    background-color: rgb(31, 20, 32);
+    background-color:var(--color-cards-container);
     display: flex;
     justify-content:space-evenly;
     align-items: center;
