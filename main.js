@@ -1,3 +1,6 @@
+const $start = document.getElementById('container');
+const $win = document.getElementById('container2');
+
 const $pedra = document.getElementById('pedra');
 const $pedraNpc = document.getElementById('pedraNpc');
 
@@ -7,7 +10,8 @@ const $papelNpc = document.getElementById('papelNpc');
 const $tesoura = document.getElementById('tesoura');
 const $tesouraNpc = document.getElementById('tesouraNpc');
 
-const $reset = document.getElementById('reset');
+/*const $reset = document.getElementByIdAll('reset');
+const $winReset = document.getElementById('win-reset');*/
 
 /*const luck = Math.floor(Math.random() * 3);*/
 
@@ -15,10 +19,12 @@ function pedra() {
    const luck = Math.floor(Math.random() * 3);
    switch(luck){
        case 0:
-            $papel.style.display= "none";
+            /*$papel.style.display= "none";
             $tesoura.style.display= "none";
             $papelNpc.style.display= "flex";
-            setTimeout(() => {reset();}, 1000);
+            setTimeout(() => {}, 1000);*/
+            $start.style.display= "none";
+            $win.style.display= "flex";
            break;
        case 1:
             $papel.style.display= "none";
@@ -90,6 +96,17 @@ function papel() {
     $pedraNpc.style.display= "none";
     $papelNpc.style.display= "none";
     $tesouraNpc.style.display= "none";
+ }
+
+ function winReset(){
+    $pedra.style.display= "flex";
+    $papel.style.display= "flex";
+    $tesoura.style.display= "flex";
+    $pedraNpc.style.display= "none";
+    $papelNpc.style.display= "none";
+    $tesouraNpc.style.display= "none";
+    $start.style.display= "flex";
+    $win.style.display= "none";
  }
 
 /*function pedra() {

@@ -12,7 +12,7 @@
 </head>
 <body>
 
-    <section class="container">
+    <section id="container" class="container">
         <div class="cards-container">
             <div id="pedra" class="card -pedra" onclick="pedra()"><h2>PEDRA</h2></div>
             <div id="papel" class="card -papel" onclick="papel()"><h2>PAPEL</h2></div>
@@ -26,6 +26,17 @@
             <div id="tesouraNpc" class="card -tesoura-Npc" onclick=""><h2>TESOURA</h2></div>    
         </div>
     </section>
+
+    <section id="container2" class="container2">
+        <div class="win-board">
+            <p class="player-win">Você Ganhou</p>
+            <p class="win-text">Winner!!!</p>
+            <img src="Archievement.png">
+            <button id="win-reset" class="start-button" onclick="winReset()">Start</button> 
+        </div>
+    </section>
+
+    
     
 
     <script src="main.js"></script>
