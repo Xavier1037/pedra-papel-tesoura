@@ -19,18 +19,16 @@ function pedra() {
    const luck = Math.floor(Math.random() * 3);
    switch(luck){
        case 0:
-            /*$papel.style.display= "none";
+            $papel.style.display= "none";
             $tesoura.style.display= "none";
-            $papelNpc.style.display= "flex";
-            setTimeout(() => {}, 1000);*/
-            $start.style.display= "none";
-            $win.style.display= "flex";
+            $papelNpc.style.display= "flex"; 
+            setTimeout(() => {reset();}, 1000);
            break;
        case 1:
             $papel.style.display= "none";
             $tesoura.style.display= "none";
             $tesouraNpc.style.display= "flex";
-            setTimeout(() => {reset();}, 1000);
+            setTimeout(() => {win()}, 1000);
            break;
        case 2:
             $papel.style.display= "none";
@@ -60,7 +58,7 @@ function papel() {
              $pedra.style.display= "none";
              $tesoura.style.display= "none";
              $pedraNpc.style.display= "flex";
-             setTimeout(() => {reset();}, 1000);
+             setTimeout(() => {win()}, 1000);
             break;
     }
  }
@@ -72,7 +70,7 @@ function papel() {
              $papel.style.display= "none";
              $pedra.style.display= "none";
              $papelNpc.style.display= "flex";
-             setTimeout(() => {reset();}, 1000);
+             setTimeout(() => {win()}, 1000);
             break;
         case 1:
              $papel.style.display= "none";
@@ -97,6 +95,11 @@ function papel() {
     $papelNpc.style.display= "none";
     $tesouraNpc.style.display= "none";
  }
+
+function win(){
+    $start.style.display= "none";
+    $win.style.display= "flex";
+}
 
  function winReset(){
     $pedra.style.display= "flex";
