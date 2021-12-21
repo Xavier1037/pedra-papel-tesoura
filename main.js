@@ -18,16 +18,19 @@ function pedra() {
             $papel.style.display= "none";
             $tesoura.style.display= "none";
             $papelNpc.style.display= "flex";
+            setTimeout(() => {reset();}, 1000);
            break;
        case 1:
             $papel.style.display= "none";
             $tesoura.style.display= "none";
             $tesouraNpc.style.display= "flex";
+            setTimeout(() => {reset();}, 1000);
            break;
        case 2:
             $papel.style.display= "none";
             $tesoura.style.display= "none";
             $pedraNpc.style.display= "flex";
+            setTimeout(() => {reset();}, 1000);
            break;
    }
 }
@@ -39,16 +42,19 @@ function papel() {
              $pedra.style.display= "none";
              $tesoura.style.display= "none";
              $papelNpc.style.display= "flex";
+             setTimeout(() => {reset();}, 1000);
             break;
         case 1:
              $pedra.style.display= "none";
              $tesoura.style.display= "none";
              $tesouraNpc.style.display= "flex";
+             setTimeout(() => {reset();}, 1000);
             break;
         case 2:
              $pedra.style.display= "none";
              $tesoura.style.display= "none";
              $pedraNpc.style.display= "flex";
+             setTimeout(() => {reset();}, 1000);
             break;
     }
  }
@@ -60,16 +66,19 @@ function papel() {
              $papel.style.display= "none";
              $pedra.style.display= "none";
              $papelNpc.style.display= "flex";
+             setTimeout(() => {reset();}, 1000);
             break;
         case 1:
              $papel.style.display= "none";
              $pedra.style.display= "none";
              $tesouraNpc.style.display= "flex";
+             setTimeout(() => {reset();}, 1000);
             break;
         case 2:
              $papel.style.display= "none";
              $pedra.style.display= "none";
              $pedraNpc.style.display= "flex";
+             setTimeout(() => {reset();}, 1000);
             break;
     }
  }
