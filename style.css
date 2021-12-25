@@ -48,6 +48,7 @@ h2{
 }
 
 .card{    
+    transition: 10s;
     cursor: pointer;
     text-align:center;
     display: flex;
@@ -64,28 +65,28 @@ h2{
 }
 
 .-pedra{
-    
     width: 200px;
     height: 100px;
     background-color: rgb(146, 89, 37);
+    transition: 3s;
 }
 
-.-papel{
-    
+.-papel{  
     width: 200px;
     height: 100px;
     background-color: rgb(20, 172, 172);
+    transition: 3s;
 }
 
-.-tesoura{
-    
+.-tesoura{   
     width: 200px;
     height: 100px;
-    background-color: rgb(13, 110, 110);
-    
+    background-color:  rgb(79, 83, 83); 
 }
 
-#reset{
+/*-------------------------------------------------------------------------------------------------*/
+
+/*#reset{
     width: 200px;
     height: 50px;
     background-color: rgb(62, 27, 73);
@@ -96,7 +97,7 @@ h2{
 #reset > h2{
     font-family: 'Shizuru', cursive;
     font-size:1.8rem;
-}
+}*/
 
 .vs{
     display: flex;
@@ -106,6 +107,8 @@ h2{
     height: 400px;
     background-color:var(--color-container);
 }
+
+/*-------------------------------------------------------------------------------------------------*/
 
 .cards-container-npc{
     position: relative;
@@ -119,6 +122,7 @@ h2{
 }
 
 .cardnpc{
+    transition: 10s;
     cursor: pointer;
     text-align:center;
     display: flex;
@@ -150,8 +154,10 @@ h2{
     position: absolute;
     display:none;
     
-    background-color: rgb(79, 83, 83);
+    background-color:rgb(103, 119, 119);
 }
+
+
 
 /*-------------------------------------------------------------------------------------------------*/
 

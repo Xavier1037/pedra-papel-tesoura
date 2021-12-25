@@ -10,7 +10,7 @@ const $papelNpc = document.getElementById('papelNpc');
 const $tesoura = document.getElementById('tesoura');
 const $tesouraNpc = document.getElementById('tesouraNpc');
 
-/*const $reset = document.getElementByIdAll('reset');
+/*const $reset = document.getElementById('reset');
 const $winReset = document.getElementById('win-reset');*/
 
 /*const luck = Math.floor(Math.random() * 3);*/
@@ -111,6 +111,10 @@ function win(){
     $start.style.display= "flex";
     $win.style.display= "none";
  }
+
+ $pedra.addEventListener('click', pedra);
+ $papel.addEventListener('click', papel);
+ $tesoura.addEventListener('click', tesoura);
 
 /*function pedra() {
     $pedraNpc.style.display= "none";
