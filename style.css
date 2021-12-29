@@ -194,6 +194,7 @@ h2{
     font-family: 'Shizuru', cursive;
     font-size:1.8rem;
     cursor: pointer;
+    text-align: center;
 }
 
 .win-text{
